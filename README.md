@@ -1,3 +1,19 @@
+#since the API you're using (https://freetestapi.com/api/v1/users) is a fake -
+bash
+npm install -g json-server
+
+Create a db.json file:
+json
+Copy code
+{
+  "users": [
+    { "id": 1, "name": "Nick", "age": 25, "location": "New York" },
+    { "id": 2, "name": "Sam", "age": 30, "location": "San Francisco" }
+  ]
+}
+
+bash
+json-server --watch db.json --port 5000
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
